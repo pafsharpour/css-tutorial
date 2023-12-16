@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        [id] {
+            background-color: black;
+            color: white;
+        }
+        [id~="one"] {
+            background-color: pink;
+        }
+        [id^="two"] {
+            background-color: rgb(196, 192, 255);
+        }
+        [id^="tree"] {
+            background-color: rgb(196, 192, 255);
+        }
+
+        input[type="text"] {
+            width: 50%;
+            display: block;
+            box-sizing: border-box;
+            border-color: darkblue;
+
+        }
+        input[type="text"]:focus {
+            background-color: lightcoral;
+        }
+
+        input[type="number"] {
+            width: 50px;
+            display: block;
+            box-sizing: border-box;
+            background-image: url("two.png");
+            background-position: 10px 10px;
+            height: 50px;
+            background-repeat: no-repeat;
+
+        }
+
+        input[id=tr] {
+            width: 130px;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url('searchicon.png');
+            background-position: 10px 10px; 
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            transition: width 0.4s ease-in-out;
+        }
+
+        input[id=tr]:focus {
+            width: 100%;
+        }
+
+        textarea {
+        width: 100%;
+        height: 150px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        font-size: 16px;
+        resize: none;
+        }
+
+        select {
+        width: 100%;
+        padding: 16px 20px;
+        border: none;
+        border-radius: 4px;
+        background-color: #f1f1f1;
+        }
+
+
+            body{
+                counter-reset: section;
+            }
+                    
+            h1 {
+            counter-reset: subsection;
+            }
+            
+            h1::before {
+            counter-increment: section;
+            content: "Section " counter(section) ". ";
+            }
+
+            h2::before {
+            counter-increment: subsection;
+            content: counter(section) "." counter(subsection) " ";
+            }
+        
+
+    </style>
+</head>
+<body>
+    <div id="hicki">Nulla enim enim id nisi fugiat irure aliquip esse eiusmod in officia. Deserunt ullamco ea sit eiusmod fugiat quis pariatur esse sunt amet eiusmod sunt cillum deserunt. Est labore qui consequat culpa. Aliquip exercitation velit ipsum elit cupidatat dolore dolor. Et velit elit nostrud officia. Cupidatat nisi consectetur laboris ad excepteur nulla aliquip reprehenderit culpa laboris quis ea. Laborum qui velit exercitation culpa aliquip minim adipisicing duis deserunt eu tempor reprehenderit.</div>
+    <div id="one one two">Nulla enim enim id nisi fugiat irure aliquip esse eiusmod in officia. Deserunt ullamco ea sit eiusmod fugiat quis pariatur esse sunt amet eiusmod sunt cillum deserunt. Est labore qui consequat culpa. Aliquip exercitation velit ipsum elit cupidatat dolore dolor. Et velit elit nostrud officia. Cupidatat nisi consectetur laboris ad excepteur nulla aliquip reprehenderit culpa laboris quis ea. Laborum qui velit exercitation culpa aliquip minim adipisicing duis deserunt eu tempor reprehenderit.</div>
+    <div id="twooookjoijoijoi">Nulla enim enim id nisi fugiat irure aliquip esse eiusmod in officia. Deserunt ullamco ea sit eiusmod fugiat quis pariatur esse sunt amet eiusmod sunt cillum deserunt. Est labore qui consequat culpa. Aliquip exercitation velit ipsum elit cupidatat dolore dolor. Et velit elit nostrud officia. Cupidatat nisi consectetur laboris ad excepteur nulla aliquip reprehenderit culpa laboris quis ea. Laborum qui velit exercitation culpa aliquip minim adipisicing duis deserunt eu tempor reprehenderit.</div>
+<br>
+
+    <form>
+        <label>name</label>
+        <input type="text">
+
+        <label>name</label>
+        <input type="text">
+
+        <label>name</label>
+        <input type="text">
+
+        
+        <label>number</label>
+        <input type="number">
+
+        <label>name</label>
+        <input type="text" id="tr">
+
+        <textarea>Some text...</textarea>
+
+        <select id="country" name="country">
+            <option value="au">Australia</option>
+            <option value="ca">Canada</option>
+            <option value="usa">USA</option>
+        </select>
+    </form>
+
+
+    <h2>HTML Tutorial</h2>
+<h2>CSS Tutorial</h2>
+<h2>JavaScript Tutorial</h2>
+<h2>Python Tutorial</h2>
+<h2>SQL Tutorial</h2>
+
+
+<h1>HTML/CSS Tutorials</h1>
+<h2>HTML</h2>
+<h2>CSS</h2>
+<h2>Bootstrap</h2>
+<h2>W3.CSS</h2>
+</body>
+</html>
