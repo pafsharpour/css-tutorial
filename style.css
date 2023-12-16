@@ -1,0 +1,17 @@
+h2{
+    text-decoration-line:line-through ;
+}
+
+h3.tr {
+    text-transform: capitalize;
+}
+
+
+
+p.spacing {
+    text-indent:30px;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    line-height:1cm;
+    white-space:nowrap;
+}
