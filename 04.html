@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+html { 
+  background: url(.png) no-repeat center fixed; 
+  background-size: cover;
+}
+
+
+        #example3 {
+            border: 10px solid black;
+            padding: 35px;
+            background: url(new.png);
+            background-repeat: no-repeat;
+            background-origin: content-box;
+        }
+
+        #example2 {
+            border: 10px dotted black;
+            padding: 35px;
+            background: yellow;
+            background-clip: content-box;
+        }
+        .radius {
+            border-radius: 1em 0.5em;
+            border: dashed green 1px;
+            width: 50%;
+            margin: auto;
+            text-align: center;
+            padding: 2em;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: larger;
+            box-sizing: border-box;
+        }
+
+        .img {
+            border: 10px solid  transparent;
+            padding: 15px;
+            border-image: url(border.png) 20 round;
+            }
+
+        #back {
+            width: 50%;
+            margin: auto;
+            background-image: url(setting.png),url(border.png);
+            background-position: right bottom, left top;
+            /* padding: 1%; */
+            background-size: contain;
+            font-size: 8em;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div class="radius">
+        hi
+    </div>
+
+    <p class="img">border-image: url(border.png) 30 round;</p>
+
+    <div id="back">
+        hi
+    </div>
+
+    <div id="example3">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+      </div>
+
+      <div id="example2">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+      </div>
+</body>
+</html>

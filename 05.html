@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            float: left;
+            margin: 1px 2px 2px 0.5em;
+            width: 10%;
+            height: 100px;
+            border: solid black 2px;
+        }
+        .one {
+            background-image: linear-gradient(red, green);
+        }
+        .two {
+            background-image: linear-gradient(to right, red, green);
+        }
+
+        .two {
+            background-image: linear-gradient(right, red, green);
+        }
+        .tree{
+            background-image: linear-gradient(to bottom right, red, green);
+        }
+        .four{
+            background-image: linear-gradient(to left, red, green);
+        }
+        .five{
+            background-image: linear-gradient(to left, red, green,yellow);
+        }
+        .six{
+            background-image: linear-gradient(140deg, red, green);
+        }
+        .seven{
+            background-image: linear-gradient(to left,rgba(255,0,0,1), rgba(255,0,0,0));
+        }
+        .eight{
+            background-image: repeating-linear-gradient(red,  green 20%);
+        }
+        .neitgh {
+            height: 200px;
+            background-color: red; /* For browsers that do not support gradients */
+            background-image: repeating-linear-gradient(45deg, red 0px, red 10px, red 10px, yellow 10px, yellow 20px);
+        }
+
+        #one {
+            background-image: radial-gradient(black,purple, pink);
+        }
+        #two {
+            background-image: radial-gradient(black 25%,purple 40%, pink 30%);
+        }
+        #tree {
+            background-image: radial-gradient(circle,black,purple, pink);
+        }
+        #four {
+            background-image: radial-gradient(closest-side at 30% 55%,black,purple, pink);
+        }
+        #five {
+            background-image: radial-gradient(farthest-side,black,purple, pink);
+        }
+        #six {
+            background-image: radial-gradient(closest-corner,black,purple, pink);
+        }
+        #seven {
+            background-image: radial-gradient(farthest-corner,black,purple, pink);
+        }
+        #eight {
+            background-image:radial-gradient(farthest-side,black,purple, pink);
+        }
+        #night {
+            background-image: repeating-radial-gradient(black 10%,purple 15%, pink 30%);
+        }
+
+        #one3 {
+            background-image: conic-gradient(red,yellow,green);
+        }
+        #two3 {
+            background-image: conic-gradient(red 40deg,yellow 30deg,green 60deg, orange);
+        }
+        #tree3 {
+            background-image: conic-gradient(red,yellow,green,blue,black);
+        }
+        #four3 {
+            background-image: conic-gradient(red 40deg,yellow 30deg,green 60deg, orange);
+            border-radius: 50%;
+
+        }
+        #five3 {
+            background-image: conic-gradient(from 360deg,red,yellow,green);
+            border-radius: 50%;
+
+        }
+        #six3 {
+            background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+            border-radius: 50%;
+
+        }
+        #seven3 {
+            background-image: repeating-conic-gradient(red 10%,yellow 20%,green 30%);
+    }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="tree"></div>
+    <div class="four"></div>
+    <div class="five"></div>
+    <div class="six"></div>
+    <div class="seven"></div>
+    <div class="eight"></div>
+    <div class="neitgh"></div>
+
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="tree"></div>
+    <div id="four"></div>
+    <div id="five"></div>
+    <div id="six"></div>
+    <div id="seven"></div>
+    <div id="eight"></div>
+    <div id="night"></div>
+
+    <div id="one3"></div>
+    <div id="two3"></div>
+    <div id="tree3"></div>
+    <div id="four3"></div>
+    <div id="five3"></div>
+    <div id="six3"></div>
+    <div id="seven3"></div>
+    <div id="eight3"></div>
+    <div id="night3"></div>
+
+
+
+
+</body>
+</html>
