@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+.div1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 2s;
+}
+
+.div2 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition-timing-function: ease-in-out;
+  transition: width 2s, height 2s;
+}
+
+.div3 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition-timing-function: ease-in-out;
+  transition: width 2s, height 2s;
+  transition-delay: 1s;
+}
+
+.div4 {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition-timing-function: ease-in-out;
+  transition: width 2s, height 2s, transform 2s;
+}
+
+div {
+    margin: 10px;
+}
+
+/* div:hover {
+  width: 300px;
+  height: 200px;
+  transform: rotate(180deg);
+} */
+
+.div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+  /* animation-fill-mode: forwards; */
+}
+
+@keyframes example{
+    0% {background-color: yellow;width: 150px;}
+    25% {background-color: blue;}
+    50% {background-color: pink;}
+    75% {background-color: green;}
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+</style>
+</head>
+<body>
+<div class="div1">
+    Exercitation ipsum esse aute et non irure ad.
+</div>
+
+<div class="div2">
+    Exercitation ipsum esse aute et non irure ad.
+</div>
+
+<div class="div3">
+    Exercitation ipsum esse aute et non irure ad.
+</div>
+<div class="div4">
+    Exercitation ipsum esse aute et non irure ad.
+</div>
+<div class="div"></div>
+
+<div class="tooltip">Hover over me
+    <span class="tooltiptext">Tooltip text</span>
+</body>
+</html>

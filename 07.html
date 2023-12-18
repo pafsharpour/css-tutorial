@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p {
+            
+            font-size: medium;
+            white-space: nowrap;
+            width: 200px;
+            /* height: 100px; */
+            border: solid 2px red;
+            overflow: hidden;
+        }
+
+        p:hover{
+            overflow: visible;
+            width: auto;
+        }
+        .hidden1 {
+            text-overflow: clip;
+        }
+        .hidden2{
+            text-overflow: ellipsis;
+        }
+
+
+        .wrap {
+            width: 11em;
+            border: 1px solid #000000;
+            word-wrap: break-word;
+        }
+
+        .break {
+            width: 11em;
+            border: 1px solid black;
+            word-break: break-all;
+        }
+        .mode {
+            writing-mode: vertical-rl;
+        }
+
+
+    </style>
+</head>
+<body>
+   
+    <p class=" p hidden1">Quis laborum dolore reprehenderit non ipsum id adipisicing nisi. Et aute veniam consequat nulla nisi deserunt. Duis tempor sunt minim ullamco minim laboris eu et cupidatat fugiat. Aliqua commodo aliqua ea est occaecat laboris irure. Aliquip do velit non incididunt laboris nulla. Amet et pariatur officia sunt anim laborum irure. Et cillum qui ipsum qui culpa adipisicing aliqua.</p>
+<p class="p hidden2">Dolore proident ex qui nostrud sint deserunt eiusmod nulla do consequat eiusmod. Mollit voluptate consequat cillum aliqua occaecat anim qui adipisicing occaecat deserunt non in officia adipisicing. Laboris veniam consequat Lorem qui non mollit laborum. Ad aliqua voluptate reprehenderit sit nostrud eiusmod qui non ea qui dolore aliqua dolor. Non consequat ex commodo pariatur velit irure. Labore officia ullamco anim excepteur deserunt irure laboris commodo. Occaecat incididunt anim laboris qui esse ex laborum eiusmod ut laboris irure.</p>
+
+
+<p class="wrap" style="word-wrap: normal;">noraml - This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+<p class="wrap"> wrap - This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+<p class="break">break - This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</p>
+
+<p class="wrap">break - This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word<span class="mode"> will break and wrap</span> will break and wrap to the next line.</p>
+
+</body>
+</html>
