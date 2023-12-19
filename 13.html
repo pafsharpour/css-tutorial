@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex {
+            display: flex;
+            background-color: purple;
+            margin: 20px;
+            width: fit-content;
+        }
+
+        .one {
+            flex-direction: column;
+        }
+
+        .two {
+            flex-direction: row-reverse;
+        }
+/* tree */
+        .four {
+            flex-wrap: wrap-reverse;
+        }
+
+        .five {
+            width: 90%;
+            justify-content: flex-end;
+        }
+
+        .six {
+            width: 90%;
+            justify-content:space-around;
+
+        }
+
+        .seven {
+            width: 70%;
+            align-items: flex-end;
+        }
+
+        .eight {
+            width: 70%;
+            align-items: baseline;
+        }
+        .nine {
+            width: 40%;
+            flex-wrap: wrap;
+            align-content:center ;
+
+        }
+        .ten {
+            width: 40%;
+            flex-wrap: wrap;
+            align-content:flex-end ;
+
+        }
+        .elv {
+            width: 40%;
+            flex-wrap: wrap;
+            align-content:center ;
+
+        }
+        .twl {
+            width: 40%;
+
+            background-color: red;
+            height: 100px;
+        }
+        /* .third {
+            width: 90%;
+            flex-wrap: wrap-reverse;
+        }
+        .fith {
+            width: 90%;
+            flex-wrap: wrap-reverse;
+        } */
+
+
+        div > div{
+            background-color: #ffffff;
+            width: 40px;
+            height: 40px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+
+    <div class="flex one">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+    <div class="flex two">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+
+    <div class="flex tree">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+
+    </div>
+    <div class="flex four">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+
+    <div class="flex five">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+
+    <div class="flex six">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+
+    <div class="flex seven">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+
+    <div class="flex eight">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+
+    <div class="flex nine">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+
+    <div class="flex ten">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+
+    <div class="flex elv">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+
+    <div class="flex twl">
+        <div style="order:4;">A</div>
+        <div style="flex-grow:5;">B</div>
+        <div style="flex-grow:3;">C</div>
+        <div style="flex-shrink:0;">D</div>
+        <div style="flex-basis: 100px;">E</div>
+        <div style="flex: 0 0 40px;">F</div>
+        <div style="align-self: center">G</div>
+    </div>
+
+    <!-- <div class="flex six">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+
+    <div class="flex six">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div> -->
+</body>
+</html>
